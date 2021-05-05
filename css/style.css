@@ -95,6 +95,7 @@ body {
     margin: 1rem 0;
 }
 .sexo {
+    display: flex;
     align-items: center;
     gap: .5rem;
 }
