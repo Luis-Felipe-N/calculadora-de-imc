@@ -12,35 +12,25 @@
 <body>
 
     <section class="container">
-        <h1 class="title-container">Calcular imc</h1>
-        <div class="conatiner-info">
-            <div class="dados">
-                <h2>IMC</h2>
-                <span>Meno do que 18.5</span>
-                <span>Entre 18.5 e 24.5</span>
-                <span>Entre 25 e 29.9</span>
-                <span>Entre 30 e 34.9</span>
-                <span>Entre 35 e 39.9</span>
-                <span>Mais do que 40</span>
-            </div>
-
-            <div class="dados">
-                <h2>Resultado</h2>
-                <span>Abixo do peso</span>
-                <span>Peso normal</span>
-                <span>Sobrepeso</span>
-                <span>Obesidade grau 1</span>
-                <span>Obesidade grau 2</span>
-                <span>Obesidade grau 3</span>
-            </div>
-        </div>
+        <h1 class="title-container">Calculadora de IMC</h1>
 
         <form class="formulario" action="">
             <label for="input-test1">Peso:</label>
-            <input type="text" id="input-peso">
+            <input type="tel" typemode="" id="input-peso">
 
             <label for="input-test2">Altura</label>
             <input type="text" id="input-altura">
+
+            <div class="container-sexo">
+                <div class="sexo">
+                    <label for="sexo-masculino">Masculino:</label>
+                    <input name="input-sexo" checked id="sexo-masculino" type="radio">
+                </div>
+                <div class="sexo">
+                    <label for="sexo-feminino">Feminino:</label>
+                <input id="sexo-feminino" name="input-sexo" type="radio">
+                </div>
+            </div>
 
             <button class="btnEnviar">Enviar</button>
 

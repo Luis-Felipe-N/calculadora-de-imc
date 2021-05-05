@@ -86,7 +86,20 @@ body {
     outline: 1px solid var(--color-primary);
 }
 
-.formulario button {
+
+.container-sexo {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sexo input {
+    height: 17px;
+    width: 17px;
+}
+
+.formulario .btnEnviar {
     background-color: var(--color-primary);
     color: #fff;
     cursor: pointer;
@@ -95,11 +108,11 @@ body {
     transition: .2s;
 }
 
-.formulario button:hover {
+.formulario .btnEnviar:hover {
     background-color: var(--color-primary-dark);
 }
 
-.formulario button:active {
+.formulario .btnEnviar:active {
     transform: translateY(5px);
     background-color: var(--color-primary-dark);
 }
@@ -126,7 +139,7 @@ body {
 
 @keyframes leftToright {
     from {
-        transform: translateX(-40%);
+        transform: translateX(-10%);
     }
     to {
         transform:translateX(0%);
